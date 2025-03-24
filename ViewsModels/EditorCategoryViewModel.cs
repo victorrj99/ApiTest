@@ -9,5 +9,6 @@ public class EditorCategoryViewModel
     public string Name { get; set; }
     [Required(ErrorMessage = "Slug deve ser obrigatório")]
     public string Slug { get; set; }
+    //
     
 }
