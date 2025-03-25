@@ -30,11 +30,21 @@ public class UserMap : IEntityTypeConfiguration<User>
             .HasColumnName("Slug")
             .HasColumnType("varchar");
         
-        builder.Property(x => x.Email);
-        builder.Property(x => x.PasswordHash);
-        builder.Property(x => x.Instagram);
-        builder.Property(x => x.Bio);
-        builder.Property(x => x.Image);
+        builder.Property(x => x.Email)
+            .IsRequired()
+            .HasColumnName("Email")
+            .HasColumnType("varchar")
+            .HasMaxLength(160);
+        builder.Property(x => x.PasswordHash)
+            .HasColumnName("PasswordHash")
+            .HasColumnType("varchar")
+            .HasMaxLength(255);
+        builder.Property(x => x.Instagram)
+            .IsRequired(false);
+        builder.Property(x => x.Bio)
+            .IsRequired(false);
+        builder.Property(x => x.Image)
+            .IsRequired(false);
         
         // indices
 

@@ -1,4 +1,5 @@
 ﻿using ApiOwn.Data;
+using ApiOwn.Extensions;
 using ApiOwn.Models;
 using ApiOwn.ViewsModels;
 using Microsoft.AspNetCore.Mvc;
@@ -11,22 +12,24 @@ public class CategoryController : ControllerBase
 {
     [HttpGet("v1/categories")]
     public async Task<IActionResult> GetAsync([FromServices] NewBlogDataContext db)
-        => Ok(await db.Categories.ToListAsync());
+        => Ok( new ResultViewModel<List<Category>>(await db.Categories.ToListAsync()));
 
     [HttpGet("v1/categories/{id:int}")]
     public async Task<IActionResult> GetCategoryIdAsync([FromServices] NewBlogDataContext db, [FromRoute] int id)
     {
+        User.IsInRole("Admin");
         try
         {
             var category = await db.Categories.FirstOrDefaultAsync(x => x.Id == id);
             if (category == null)
-                return NotFound(category);
+                return NotFound(new ResultViewModel<Category>("Conteúdo não encontrado"));
         
-            return Ok(category);
+            return Ok(new ResultViewModel<Category>(category));
         }
-        catch (Exception e)
+        catch
         {
-            return StatusCode(500, $"0X584D56 - {e.Message}");
+            return StatusCode(500, @$"0X584D56 - 
+                {new ResultViewModel<List<Category>>("Falha interna no servidor")}");
         }
     }
     
@@ -34,7 +37,7 @@ public class CategoryController : ControllerBase
     public async Task<IActionResult> PostAsync([FromBody] EditorCategoryViewModel model, [FromServices] NewBlogDataContext db)
     {
         if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+            return BadRequest(new ResultViewModel<Category>(ModelState.GetErrors()));
         try
         {
             var category = new Category()

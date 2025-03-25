@@ -8,6 +8,7 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\ApiOwn
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -31,10 +32,14 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Micros
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -68,7 +73,9 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Security.Permissions.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\System.Text.Json.dll
@@ -169,6 +176,7 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtim
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -179,6 +187,7 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.csproj.CoreCompileInputs.cache
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.sourcelink.json
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\staticwebassets\msbuild.ApiOwn.Microsoft.AspNetCore.StaticWebAssets.props
