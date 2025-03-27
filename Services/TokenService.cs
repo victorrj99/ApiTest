@@ -1,8 +1,10 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using ApiOwn.Extensions;
 using ApiOwn.Models;
 using Microsoft.IdentityModel.Tokens;
+
 
 namespace ApiOwn.Services;
 
@@ -12,13 +14,10 @@ public class TokenService
     {
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.ASCII.GetBytes(Configuration.JwtKey);
+        var claims = user.GetClaims();
         var tokenDescriptor = new SecurityTokenDescriptor()
         {
-            Subject = new ClaimsIdentity([
-                new Claim(ClaimTypes.Name, "João Victor"), // User.Identity.Name
-                new Claim(ClaimTypes.Role, "Admin"), // User.IsInRole
-                new Claim("fruta", "banana")
-            ]),
+            Subject = new ClaimsIdentity(claims),
             Expires = DateTime.UtcNow.AddHours(10),
             SigningCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(key),

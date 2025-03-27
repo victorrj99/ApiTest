@@ -1466,6 +1466,15 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
+      "SecureIdentity/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
         "type": "package",
         "dependencies": {
@@ -4902,6 +4911,18 @@
         "readme.md"
       ]
     },
+    "SecureIdentity/1.0.4": {
+      "sha512": "/s0TMYeHuLXFh2nI337IFGL2E3FJU+o20W4e52muxbWl5BPefUlmEPBTwWuCq3NczwWhbes5GDC6kDWYBrhLaQ==",
+      "type": "package",
+      "path": "secureidentity/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/SecureIdentity.dll",
+        "secureidentity.1.0.4.nupkg.sha512",
+        "secureidentity.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "sha512": "UxWuisvZ3uVcVOLJQv7urM/JiQH+v3TmaJc1BLKl5Dxfm/nTzTUrqswCqg/INiYLi61AXnHo1M1JPmPqqLnAdg==",
       "type": "package",
@@ -6390,6 +6411,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.3",
+      "SecureIdentity >= 1.0.4",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -6468,6 +6490,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[9.0.3, )"
+          },
+          "SecureIdentity": {
+            "target": "Package",
+            "version": "[1.0.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

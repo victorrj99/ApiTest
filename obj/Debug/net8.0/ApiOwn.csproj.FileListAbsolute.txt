@@ -202,3 +202,4 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\refint
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.pdb
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.genruntimeconfig.cache
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ref\ApiOwn.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SecureIdentity.dll
