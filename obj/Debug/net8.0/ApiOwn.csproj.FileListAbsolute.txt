@@ -52,6 +52,7 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Micros
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SecureIdentity.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -202,4 +203,3 @@ C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\refint
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.pdb
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ApiOwn.genruntimeconfig.cache
 C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\obj\Debug\net8.0\ref\ApiOwn.dll
-C:\Users\Victor\Documents\Projeto\Estudo01\ApiOwn\ApiOwn\bin\Debug\net8.0\SecureIdentity.dll

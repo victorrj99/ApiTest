@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using ApiOwn.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiOwn.Controllers;
@@ -8,7 +9,6 @@ namespace ApiOwn.Controllers;
 public class HomeController : ControllerBase
 {
     [HttpGet("")]
-    [Authorize]
     public IActionResult Get() 
         => Ok();
 }

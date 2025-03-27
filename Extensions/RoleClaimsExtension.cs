@@ -13,6 +13,6 @@ public static class RoleClaimsExtension
         };
         result.AddRange(user.Roles.Select(x => new Claim(ClaimTypes.Role, x.Slug)));
         return result;
-        //
+        
     }
 }

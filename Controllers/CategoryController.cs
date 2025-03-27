@@ -2,6 +2,7 @@
 using ApiOwn.Extensions;
 using ApiOwn.Models;
 using ApiOwn.ViewsModels;
+using ApiOwn.ViewsModels.Categories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
