@@ -70,7 +70,7 @@ public class AccountController : ControllerBase
         {
             Email = model.Email,
             Name = model.Name,
-            Slug = model.Name.ToLower().Replace("@", "-").Replace(".", "-").Replace(" ", "-")
+            Slug = model.Email.ToLower().Replace("@", "-").Replace(".", "-").Replace(" ", "-")
             
         };
         user.PasswordHash = PasswordHasher.Hash(password);

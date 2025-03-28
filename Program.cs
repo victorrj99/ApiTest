@@ -1,8 +1,10 @@
 using System.Text;
+using System.Text.Json.Serialization;
 using ApiOwn;
 using ApiOwn.Data;
 using ApiOwn.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +23,7 @@ app.MapControllers();
 app.UseAuthentication(); // Sempre vem primeiro
 app.UseAuthorization(); // Sempre vem depois
 app.UseStaticFiles();
+app.UseResponseCompression();
 LoadConfiguration(app);
 
 
@@ -79,12 +82,26 @@ void ConfigureAuthentication(WebApplicationBuilder builder)
 
 void ConfigureMvc(WebApplicationBuilder builder)
 {
+    builder.Services.AddMemoryCache();
+    builder.Services.AddResponseCompression(options =>
+    {
+        options.Providers.Add<GzipCompressionProvider>();
+    });
+    builder.Services.Configure<GzipCompressionProviderOptions>(options =>
+    {
+        options.Level = System.IO.Compression.CompressionLevel.Optimal;
+    });
     builder.Services.
         AddControllers()
         .ConfigureApiBehaviorOptions(options =>
-    {
-        options.SuppressModelStateInvalidFilter = true;
-    });
+        {
+            options.SuppressModelStateInvalidFilter = true;
+        })
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault;
+        });
 }
 
 void ConfigureServices(WebApplicationBuilder builder)
